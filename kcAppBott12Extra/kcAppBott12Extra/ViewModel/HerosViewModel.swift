@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import MapKit
 
 final class HerosViewModel :ObservableObject {
     //@Published var locations : [HeroLocationsResponse]? //asi en SwiftUI
@@ -44,4 +45,16 @@ final class HerosViewModel :ObservableObject {
     }
     
     
+    //convuerte un modelo de la respuesta del servidor en un modelo para mapkit
+    func convertModelToMaps(model:HeroLocationsResponse) -> HeroMap{
+       HeroMap(title: "Capitan America", coordinate: CLLocationCoordinate2D(latitude: model.latitud.toDouble(), longitude: model.longitud.toDouble()), locationName: "Madrid1", discipline: "Sculpture")
+    }
+    
+}
+
+extension String {
+    func toDouble() -> Double {
+        let nsString = self as NSString
+        return nsString.doubleValue
+    }
 }

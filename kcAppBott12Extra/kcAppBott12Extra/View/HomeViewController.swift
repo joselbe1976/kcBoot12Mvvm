@@ -34,14 +34,29 @@ class HomeViewController: UIViewController {
         // Localizacion Inicial en el Bernabeu
       
         let initialLocation = CLLocation(latitude: 40.45064838408302, longitude: -3.6878562736371205)
-        mapa.centerToLocation(initialLocation, regionRadius: 400)
+        mapa.centerToLocation(initialLocation, regionRadius: 1000)
+        
         
         //NEW: -----
         //Creamos el suscriptor del publicador
         self.herosVM?.locations
             .sink(receiveValue: { data in
-                //aqui tenemos las localizaciones
-                print("localizaciones tenemos \(data.count)")
+                DispatchQueue.main.async {
+                    //aqui tenemos las localizaciones
+                    print("localizaciones tenemos \(data.count)")
+                    
+                    //recorremos cada localizacion del response del server
+                    data.forEach(){ locat in
+                        //convertimos el modelo de MapKit necesario
+                        let modelMapKit = self.herosVM?.convertModelToMaps(model: locat)
+                        
+                        //Añadimos el punto, desempaquetando antes
+                        if let model = modelMapKit {
+                            self.mapa.addAnnotation(model)
+                        }
+                    }
+                }
+                
                 
                 
             })

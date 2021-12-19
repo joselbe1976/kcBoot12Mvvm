@@ -61,6 +61,9 @@
 		31B27176276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
 		31B27177276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
 		31B27178276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
+		31B2717A276F61F10040E7E8 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27179276F61F10040E7E8 /* Mapas.swift */; };
+		31B2717B276F61F10040E7E8 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27179276F61F10040E7E8 /* Mapas.swift */; };
+		31B2717C276F61F10040E7E8 /* Mapas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27179276F61F10040E7E8 /* Mapas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,7 @@
 		31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyoeAlias.swift; sourceTree = "<group>"; };
 		31B27171276F52160040E7E8 /* MKMapView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+extension.swift"; sourceTree = "<group>"; };
 		31B27175276F56FD0040E7E8 /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
+		31B27179276F61F10040E7E8 /* Mapas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				31B27163276F3C840040E7E8 /* Heros.swift */,
+				31B27179276F61F10040E7E8 /* Mapas.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				31B27164276F3C840040E7E8 /* Heros.swift in Sources */,
 				31B2713D276F36250040E7E8 /* LoginViewController.swift in Sources */,
 				31B27152276F36810040E7E8 /* BindingObject.swift in Sources */,
+				31B2717A276F61F10040E7E8 /* Mapas.swift in Sources */,
 				31B2715C276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B2713A276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27176276F56FD0040E7E8 /* HerosViewModel.swift in Sources */,
@@ -456,6 +462,7 @@
 				31B2713B276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27147276F36250040E7E8 /* HomeViewController.swift in Sources */,
 				31B27169276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */,
+				31B2717B276F61F10040E7E8 /* Mapas.swift in Sources */,
 				31B27165276F3C840040E7E8 /* Heros.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +481,7 @@
 				31B27174276F52160040E7E8 /* MKMapView+extension.swift in Sources */,
 				31B2713C276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27166276F3C840040E7E8 /* Heros.swift in Sources */,
+				31B2717C276F61F10040E7E8 /* Mapas.swift in Sources */,
 				31B27124276F35D40040E7E8 /* kcAppBott12ExtraUITests.swift in Sources */,
 				31B2714F276F363F0040E7E8 /* RootViewModel.swift in Sources */,
 				31B2715E276F398D0040E7E8 /* RootInteractor.swift in Sources */,
