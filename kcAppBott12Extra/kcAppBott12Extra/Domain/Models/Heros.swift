@@ -19,3 +19,17 @@ struct Heros: Codable , Identifiable{
 struct HerosFilter: Codable {
     var name: String
 }
+
+
+struct HeroLocationsRequest: Codable {
+    var id: String
+}
+
+
+//localizations Response
+struct HeroLocationsResponse : Codable{
+    let id: String
+    let longitud: String
+    let latitud: String
+}
+

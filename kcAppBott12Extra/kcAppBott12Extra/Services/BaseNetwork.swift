@@ -22,6 +22,8 @@ struct HTTPMethods{
 enum endpoints : String {
     case login = "/api/auth/login"
     case herosList = "/api/heros/all"
+    case heroLocations = "/api/heros/locations" 
+    
 }
 
 
@@ -52,6 +54,28 @@ struct BaseNetwork {
         request.httpMethod = HTTPMethods.post
         // generamos el JSON
         request.httpBody = try? JSONEncoder().encode(HerosFilter(name: filter))
+        
+        request.addValue(HTTPMethods.content, forHTTPHeaderField: "Content-type") //Header aplication JSON
+        
+        //token JWT
+        let defaults = UserDefaults.standard
+        let token = defaults.string(forKey: "TOKEN-JWT")
+        
+        if let tokenJWT = token {
+            request.addValue("Bearer \(tokenJWT)", forHTTPHeaderField: "Authorization") //Token
+        }
+        
+        return request
+    }
+    
+    
+    // Localizaciones de un Hero
+    func getSessionHeros(idHero:String) -> URLRequest {
+        let urlCad : String = "\(server)\(endpoints.heroLocations.rawValue)"
+        var request : URLRequest = URLRequest(url: URL(string: urlCad)!)
+        request.httpMethod = HTTPMethods.post
+        // generamos el JSON
+        request.httpBody = try? JSONEncoder().encode(HeroLocationsRequest(id: idHero))
         
         request.addValue(HTTPMethods.content, forHTTPHeaderField: "Content-type") //Header aplication JSON
         

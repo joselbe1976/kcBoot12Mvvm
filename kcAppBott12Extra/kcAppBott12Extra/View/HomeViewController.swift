@@ -6,13 +6,20 @@
 //
 
 import UIKit
+import MapKit
+import Combine //new
 
 class HomeViewController: UIViewController {
     var rootVM:RootViewModel?
+    var herosVM:HerosViewModel? //new
+    var suscriptors = Set<AnyCancellable>() //new
     
-    init(vm:RootViewModel){
+    @IBOutlet weak var mapa: MKMapView!
+    
+    init(vm:RootViewModel, herosVM : HerosViewModel = HerosViewModel()){ //new
         super.init(nibName: nil, bundle: nil)
         self.rootVM = vm
+        self.herosVM = herosVM //new
        
     }
     
@@ -24,21 +31,35 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.title = ""
+        // Localizacion Inicial en el Bernabeu
+      
+        let initialLocation = CLLocation(latitude: 40.45064838408302, longitude: -3.6878562736371205)
+        mapa.centerToLocation(initialLocation, regionRadius: 400)
+        
+        //NEW: -----
+        //Creamos el suscriptor del publicador
+        self.herosVM?.locations
+            .sink(receiveValue: { data in
+                //aqui tenemos las localizaciones
+                print("localizaciones tenemos \(data.count)")
+                
+                
+            })
+            .store(in: &suscriptors)
+        
+        
+        //lanzamos la carga
+        self.herosVM?.loadLocations()
     }
+    
+
 
     @IBAction func logOut(_ sender: Any) {
         self.rootVM?.viewActive = .Login //pantalla de login
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
+    
 }
+
+

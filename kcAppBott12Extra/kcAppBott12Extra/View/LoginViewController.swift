@@ -38,6 +38,10 @@ class LoginViewController: UIViewController {
         self.rootVM?.errorMessage.bind({ data in
             self.errorLabel.text = data
         })
+        
+        user.text = "bejl@keepcoding.es"
+        password.text = "123456"
+        
     }
 
     @IBAction func LoginButton(_ sender: Any) {

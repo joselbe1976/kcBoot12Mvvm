@@ -55,6 +55,12 @@
 		31B2716C276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
 		31B2716D276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
 		31B2716E276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
+		31B27172276F52160040E7E8 /* MKMapView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27171276F52160040E7E8 /* MKMapView+extension.swift */; };
+		31B27173276F52160040E7E8 /* MKMapView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27171276F52160040E7E8 /* MKMapView+extension.swift */; };
+		31B27174276F52160040E7E8 /* MKMapView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27171276F52160040E7E8 /* MKMapView+extension.swift */; };
+		31B27176276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
+		31B27177276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
+		31B27178276F56FD0040E7E8 /* HerosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27175276F56FD0040E7E8 /* HerosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,8 @@
 		31B27163276F3C840040E7E8 /* Heros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heros.swift; sourceTree = "<group>"; };
 		31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoginRest.swift; sourceTree = "<group>"; };
 		31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyoeAlias.swift; sourceTree = "<group>"; };
+		31B27171276F52160040E7E8 /* MKMapView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+extension.swift"; sourceTree = "<group>"; };
+		31B27175276F56FD0040E7E8 /* HerosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 		31B27101276F35D20040E7E8 /* kcAppBott12Extra */ = {
 			isa = PBXGroup;
 			children = (
+				31B2716F276F51F50040E7E8 /* Tools */,
 				31B2715A276F39500040E7E8 /* Services */,
 				31B27158276F39300040E7E8 /* Repository */,
 				31B27155276F391D0040E7E8 /* Domain */,
@@ -163,8 +172,6 @@
 				31B2710B276F35D30040E7E8 /* Assets.xcassets */,
 				31B2710D276F35D30040E7E8 /* LaunchScreen.storyboard */,
 				31B27110276F35D30040E7E8 /* Info.plist */,
-				31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */,
-				31B27151276F36810040E7E8 /* BindingObject.swift */,
 			);
 			path = kcAppBott12Extra;
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				31B2714C276F363F0040E7E8 /* RootViewModel.swift */,
+				31B27175276F56FD0040E7E8 /* HerosViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,7 +218,6 @@
 		31B27155276F391D0040E7E8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */,
 				31B27157276F39270040E7E8 /* interactor */,
 				31B27156276F39220040E7E8 /* Models */,
 			);
@@ -252,8 +259,27 @@
 		31B2715A276F39500040E7E8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		31B2716F276F51F50040E7E8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */,
+				31B27151276F36810040E7E8 /* BindingObject.swift */,
+				31B27170276F51F90040E7E8 /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		31B27170276F51F90040E7E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31B27171276F52160040E7E8 /* MKMapView+extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,9 +432,11 @@
 				31B27152276F36810040E7E8 /* BindingObject.swift in Sources */,
 				31B2715C276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B2713A276F36250040E7E8 /* RegisterViewController.swift in Sources */,
+				31B27176276F56FD0040E7E8 /* HerosViewModel.swift in Sources */,
 				31B27146276F36250040E7E8 /* HomeViewController.swift in Sources */,
 				31B2716C276F3FF00040E7E8 /* TyoeAlias.swift in Sources */,
 				31B27160276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
+				31B27172276F52160040E7E8 /* MKMapView+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B2714E276F363F0040E7E8 /* RootViewModel.swift in Sources */,
+				31B27173276F52160040E7E8 /* MKMapView+extension.swift in Sources */,
 				31B27161276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
+				31B27177276F56FD0040E7E8 /* HerosViewModel.swift in Sources */,
 				31B27153276F36810040E7E8 /* BindingObject.swift in Sources */,
 				31B2715D276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B2713E276F36250040E7E8 /* LoginViewController.swift in Sources */,
@@ -438,8 +468,10 @@
 				31B2716E276F3FF00040E7E8 /* TyoeAlias.swift in Sources */,
 				31B27148276F36250040E7E8 /* HomeViewController.swift in Sources */,
 				31B27154276F36810040E7E8 /* BindingObject.swift in Sources */,
+				31B27178276F56FD0040E7E8 /* HerosViewModel.swift in Sources */,
 				31B2713F276F36250040E7E8 /* LoginViewController.swift in Sources */,
 				31B27162276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
+				31B27174276F52160040E7E8 /* MKMapView+extension.swift in Sources */,
 				31B2713C276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27166276F3C840040E7E8 /* Heros.swift in Sources */,
 				31B27124276F35D40040E7E8 /* kcAppBott12ExtraUITests.swift in Sources */,
