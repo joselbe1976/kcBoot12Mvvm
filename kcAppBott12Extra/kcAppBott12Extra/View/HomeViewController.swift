@@ -8,6 +8,8 @@
 import UIKit
 import MapKit
 import Combine //new
+import CoreLocation //poara localizacion del usuario conectado
+
 
 class HomeViewController: UIViewController {
     var rootVM:RootViewModel?
@@ -15,6 +17,9 @@ class HomeViewController: UIViewController {
     var suscriptors = Set<AnyCancellable>() //new
     
     @IBOutlet weak var mapa: MKMapView!
+    
+    
+    let locationManager = CLLocationManager() //New Localizacion User connected
     
     init(vm:RootViewModel, herosVM : HerosViewModel = HerosViewModel()){ //new
         super.init(nibName: nil, bundle: nil)
@@ -35,6 +40,10 @@ class HomeViewController: UIViewController {
       
         let initialLocation = CLLocation(latitude: 40.45064838408302, longitude: -3.6878562736371205)
         mapa.centerToLocation(initialLocation, regionRadius: 1000)
+        
+   
+        //localizacion del usuario conectado
+        UserLocation()
         
         
         //NEW: -----
@@ -78,3 +87,49 @@ class HomeViewController: UIViewController {
 }
 
 
+
+extension HomeViewController: CLLocationManagerDelegate,MKMapViewDelegate {
+    
+    
+    func UserLocation(){
+        //self.locationManager.requestAlwaysAuthorization()
+        
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+               locationManager.delegate = self
+               locationManager.desiredAccuracy = kCLLocationAccuracyBest
+               locationManager.startUpdatingLocation()
+        }
+
+        mapa.delegate = self
+        mapa.mapType = .standard
+        mapa.isZoomEnabled = true
+        mapa.isScrollEnabled = true
+        
+        if let coor = mapa.userLocation.location?.coordinate{
+                mapa.setCenter(coor, animated: true)
+        }
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations
+        locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+
+        mapa.mapType = MKMapType.standard
+
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: locValue, span: span)
+        mapa.setRegion(region, animated: true)
+
+        //añadimos nuestra posicion al mapa
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = locValue
+        annotation.title = "Estas AQUI"
+        mapa.addAnnotation(annotation)
+    }
+    
+}

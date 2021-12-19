@@ -50,6 +50,7 @@ final class RootViewModel{
         
         rootInteractor.login(user: user, pass: pass) {
             //login Success.. cambiamos la vista a Home
+            self.errorMessage.setValue(value: "Conectado") //new
             self.viewActive = .Home
         } onError: {
             //Login Error
