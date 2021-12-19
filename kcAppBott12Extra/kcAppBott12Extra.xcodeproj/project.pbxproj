@@ -37,9 +37,24 @@
 		31B2714D276F363F0040E7E8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2714C276F363F0040E7E8 /* RootViewModel.swift */; };
 		31B2714E276F363F0040E7E8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2714C276F363F0040E7E8 /* RootViewModel.swift */; };
 		31B2714F276F363F0040E7E8 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2714C276F363F0040E7E8 /* RootViewModel.swift */; };
-		31B27152276F36810040E7E8 /* DinamicObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* DinamicObserver.swift */; };
-		31B27153276F36810040E7E8 /* DinamicObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* DinamicObserver.swift */; };
-		31B27154276F36810040E7E8 /* DinamicObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* DinamicObserver.swift */; };
+		31B27152276F36810040E7E8 /* BindingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* BindingObject.swift */; };
+		31B27153276F36810040E7E8 /* BindingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* BindingObject.swift */; };
+		31B27154276F36810040E7E8 /* BindingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27151276F36810040E7E8 /* BindingObject.swift */; };
+		31B2715C276F398D0040E7E8 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715B276F398D0040E7E8 /* RootInteractor.swift */; };
+		31B2715D276F398D0040E7E8 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715B276F398D0040E7E8 /* RootInteractor.swift */; };
+		31B2715E276F398D0040E7E8 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715B276F398D0040E7E8 /* RootInteractor.swift */; };
+		31B27160276F3AC60040E7E8 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */; };
+		31B27161276F3AC60040E7E8 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */; };
+		31B27162276F3AC60040E7E8 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */; };
+		31B27164276F3C840040E7E8 /* Heros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27163276F3C840040E7E8 /* Heros.swift */; };
+		31B27165276F3C840040E7E8 /* Heros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27163276F3C840040E7E8 /* Heros.swift */; };
+		31B27166276F3C840040E7E8 /* Heros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27163276F3C840040E7E8 /* Heros.swift */; };
+		31B27168276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */; };
+		31B27169276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */; };
+		31B2716A276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */; };
+		31B2716C276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
+		31B2716D276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
+		31B2716E276F3FF00040E7E8 /* TyoeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +95,12 @@
 		31B27138276F36250040E7E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		31B27139276F36250040E7E8 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		31B2714C276F363F0040E7E8 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		31B27151276F36810040E7E8 /* DinamicObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinamicObserver.swift; sourceTree = "<group>"; };
+		31B27151276F36810040E7E8 /* BindingObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingObject.swift; sourceTree = "<group>"; };
+		31B2715B276F398D0040E7E8 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		31B27163276F3C840040E7E8 /* Heros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heros.swift; sourceTree = "<group>"; };
+		31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoginRest.swift; sourceTree = "<group>"; };
+		31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyoeAlias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +151,9 @@
 		31B27101276F35D20040E7E8 /* kcAppBott12Extra */ = {
 			isa = PBXGroup;
 			children = (
+				31B2715A276F39500040E7E8 /* Services */,
+				31B27158276F39300040E7E8 /* Repository */,
+				31B27155276F391D0040E7E8 /* Domain */,
 				31B27133276F35FE0040E7E8 /* View */,
 				31B27132276F35F50040E7E8 /* ViewModel */,
 				31B27102276F35D20040E7E8 /* AppDelegate.swift */,
@@ -140,6 +163,8 @@
 				31B2710B276F35D30040E7E8 /* Assets.xcassets */,
 				31B2710D276F35D30040E7E8 /* LaunchScreen.storyboard */,
 				31B27110276F35D30040E7E8 /* Info.plist */,
+				31B2716B276F3FF00040E7E8 /* TyoeAlias.swift */,
+				31B27151276F36810040E7E8 /* BindingObject.swift */,
 			);
 			path = kcAppBott12Extra;
 			sourceTree = "<group>";
@@ -172,7 +197,6 @@
 		31B27133276F35FE0040E7E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				31B27150276F36810040E7E8 /* tools */,
 				31B27138276F36250040E7E8 /* HomeViewController.swift */,
 				31B27136276F36250040E7E8 /* HomeViewController.xib */,
 				31B27135276F36250040E7E8 /* LoginViewController.swift */,
@@ -183,12 +207,53 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		31B27150276F36810040E7E8 /* tools */ = {
+		31B27155276F391D0040E7E8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				31B27151276F36810040E7E8 /* DinamicObserver.swift */,
+				31B2715F276F3AC60040E7E8 /* BaseNetwork.swift */,
+				31B27157276F39270040E7E8 /* interactor */,
+				31B27156276F39220040E7E8 /* Models */,
 			);
-			path = tools;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		31B27156276F39220040E7E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31B27163276F3C840040E7E8 /* Heros.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31B27157276F39270040E7E8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				31B2715B276F398D0040E7E8 /* RootInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		31B27158276F39300040E7E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				31B27159276F39370040E7E8 /* network */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		31B27159276F39370040E7E8 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				31B27167276F3E020040E7E8 /* NetworkLoginRest.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		31B2715A276F39500040E7E8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,12 +398,17 @@
 			files = (
 				31B27107276F35D20040E7E8 /* ViewController.swift in Sources */,
 				31B2714D276F363F0040E7E8 /* RootViewModel.swift in Sources */,
+				31B27168276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */,
 				31B27103276F35D20040E7E8 /* AppDelegate.swift in Sources */,
 				31B27105276F35D20040E7E8 /* SceneDelegate.swift in Sources */,
+				31B27164276F3C840040E7E8 /* Heros.swift in Sources */,
 				31B2713D276F36250040E7E8 /* LoginViewController.swift in Sources */,
-				31B27152276F36810040E7E8 /* DinamicObserver.swift in Sources */,
+				31B27152276F36810040E7E8 /* BindingObject.swift in Sources */,
+				31B2715C276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B2713A276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27146276F36250040E7E8 /* HomeViewController.swift in Sources */,
+				31B2716C276F3FF00040E7E8 /* TyoeAlias.swift in Sources */,
+				31B27160276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,11 +417,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B2714E276F363F0040E7E8 /* RootViewModel.swift in Sources */,
-				31B27153276F36810040E7E8 /* DinamicObserver.swift in Sources */,
+				31B27161276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
+				31B27153276F36810040E7E8 /* BindingObject.swift in Sources */,
+				31B2715D276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B2713E276F36250040E7E8 /* LoginViewController.swift in Sources */,
 				31B2711A276F35D40040E7E8 /* kcAppBott12ExtraTests.swift in Sources */,
+				31B2716D276F3FF00040E7E8 /* TyoeAlias.swift in Sources */,
 				31B2713B276F36250040E7E8 /* RegisterViewController.swift in Sources */,
 				31B27147276F36250040E7E8 /* HomeViewController.swift in Sources */,
+				31B27169276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */,
+				31B27165276F3C840040E7E8 /* Heros.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,12 +434,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B2716A276F3E020040E7E8 /* NetworkLoginRest.swift in Sources */,
+				31B2716E276F3FF00040E7E8 /* TyoeAlias.swift in Sources */,
 				31B27148276F36250040E7E8 /* HomeViewController.swift in Sources */,
-				31B27154276F36810040E7E8 /* DinamicObserver.swift in Sources */,
+				31B27154276F36810040E7E8 /* BindingObject.swift in Sources */,
 				31B2713F276F36250040E7E8 /* LoginViewController.swift in Sources */,
+				31B27162276F3AC60040E7E8 /* BaseNetwork.swift in Sources */,
 				31B2713C276F36250040E7E8 /* RegisterViewController.swift in Sources */,
+				31B27166276F3C840040E7E8 /* Heros.swift in Sources */,
 				31B27124276F35D40040E7E8 /* kcAppBott12ExtraUITests.swift in Sources */,
 				31B2714F276F363F0040E7E8 /* RootViewModel.swift in Sources */,
+				31B2715E276F398D0040E7E8 /* RootInteractor.swift in Sources */,
 				31B27126276F35D40040E7E8 /* kcAppBott12ExtraUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

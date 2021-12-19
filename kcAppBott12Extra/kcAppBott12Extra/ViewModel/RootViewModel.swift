@@ -16,6 +16,12 @@ enum viewsStatus {
 
 final class RootViewModel{
     
+    var rootInteractor : RootInteractorProtocol
+    
+    init(interactor : RootInteractorProtocol = RootInteractor()){
+        self.rootInteractor = interactor
+    }
+    
     //estado
     var viewActive: viewsStatus = .Login{
         didSet{
@@ -31,4 +37,24 @@ final class RootViewModel{
     //Definimos una variable de tipo funcion que no recibe argumentos, y no devuelve nada... Despues en el SceneDelegate, le asignarmeos el codigo de la funcion...
     var onViewChange: (() -> Void)?
     
+    
+    
+    //Mensaje de Error
+    
+    var errorMessage = BindingObject("")
+    
+    
+    
+    //Login
+    func login(user:String, pass:String){
+        
+        rootInteractor.login(user: user, pass: pass) {
+            //login Success.. cambiamos la vista a Home
+            self.viewActive = .Home
+        } onError: {
+            //Login Error
+            self.errorMessage.setValue(value: "Error login")
+        }
+
+    }
 }
