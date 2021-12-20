@@ -108,6 +108,7 @@ extension HomeViewController: CLLocationManagerDelegate,MKMapViewDelegate {
         mapa.isZoomEnabled = true
         mapa.isScrollEnabled = true
         
+
         if let coor = mapa.userLocation.location?.coordinate{
                 mapa.setCenter(coor, animated: true)
         }
@@ -117,18 +118,21 @@ extension HomeViewController: CLLocationManagerDelegate,MKMapViewDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations
         locations: [CLLocation]) {
+        
+        //pilla la coordenada de la localizacion
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
 
-        mapa.mapType = MKMapType.standard
-
+      
+        // Posiciona en el mapa
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: locValue, span: span)
-        mapa.setRegion(region, animated: true)
+       // mapa.setRegion(region, animated: true) //nos mieve a la posicion indicada
+         
 
         //añadimos nuestra posicion al mapa
         let annotation = MKPointAnnotation()
         annotation.coordinate = locValue
-        annotation.title = "Estas AQUI"
+        annotation.title = "Estas AQUI Jose"
         mapa.addAnnotation(annotation)
     }
     

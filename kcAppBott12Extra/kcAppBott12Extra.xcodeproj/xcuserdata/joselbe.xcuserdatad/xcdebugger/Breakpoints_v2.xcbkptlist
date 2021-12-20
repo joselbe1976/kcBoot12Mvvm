@@ -14,42 +14,10 @@
             filePath = "kcAppBott12Extra/View/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2CC1DF31-B31F-46CF-9425-1CA2B5B09E66 - fb67e3e05ef1fb83"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kcAppBott12Extra.HomeViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
-                  moduleName = "kcAppBott12Extra"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joselbe/Desktop/@JoselbeData/Jose%20Luis/KeepCoding%202021/Clases%20Bootcamps/Bootcamp%2012%20-%20Septiembre%202021/Session%20Extra%20Bott12/kcBoot12Mvvm/kcAppBott12Extra/kcAppBott12Extra/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "193">
-               </Location>
-               <Location
-                  uuid = "2CC1DF31-B31F-46CF-9425-1CA2B5B09E66 - a79448bd5357f9af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "kcAppBott12ExtraTests.HomeViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
-                  moduleName = "kcAppBott12ExtraTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joselbe/Desktop/@JoselbeData/Jose%20Luis/KeepCoding%202021/Clases%20Bootcamps/Bootcamp%2012%20-%20Septiembre%202021/Session%20Extra%20Bott12/kcBoot12Mvvm/kcAppBott12Extra/kcAppBott12Extra/View/HomeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "193">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
